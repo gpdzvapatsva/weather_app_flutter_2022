@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       )
     ]);
     return MaterialApp(
-      title: 'Flutter Weather App',
+      title: "Godwin's Weather App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
@@ -30,13 +30,14 @@ class MyApp extends StatelessWidget {
           headline3: textStyleWithShadow,
           headline4: textStyleWithShadow,
           headline5: textStyleWithShadow,
-          subtitle1: const TextStyle(color: Colors.white),
+          subtitle1: const TextStyle(color: Colors.pinkAccent),
           bodyText2: const TextStyle(color: Colors.white),
           bodyText1: const TextStyle(color: Colors.white),
           caption: const TextStyle(color: Colors.white70, fontSize: 13),
         ),
       ),
-      home: const WeatherPage(city: 'Pretoria'),
+      home: const WeatherPage(city: 'Pretoria',),
+
     );
   }
 }
