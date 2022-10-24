@@ -11,7 +11,13 @@ class WeatherPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title:Text("Godwins Weather App"),
+      centerTitle: true,
+        backgroundColor: Colors.pinkAccent,
+      ),
+
       body: Container(
+
         width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -22,6 +28,7 @@ class WeatherPage extends StatelessWidget {
         ),
         child: SafeArea(
           child: Column(
+
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: const [

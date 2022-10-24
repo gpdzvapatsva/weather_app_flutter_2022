@@ -33,6 +33,7 @@ class _CitySearchRowState extends ConsumerState<CitySearchBox> {
   @override
   Widget build(BuildContext context) {
     return Padding(
+
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +41,9 @@ class _CitySearchRowState extends ConsumerState<CitySearchBox> {
           Expanded(
             child: SizedBox(
               height: 50,
+
               child: TextField(
+
                 controller: _searchController,
                 textAlign: TextAlign.center,
                 style: const TextStyle(color: Colors.black),
@@ -60,6 +63,7 @@ class _CitySearchRowState extends ConsumerState<CitySearchBox> {
           ),
           InkWell(
             child: Container(
+
               height: 50,
               alignment: Alignment.center,
               decoration: const BoxDecoration(
@@ -71,7 +75,8 @@ class _CitySearchRowState extends ConsumerState<CitySearchBox> {
               ),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                child: Text('search',
+                child: Text(
+                    'search',
                     style: Theme.of(context).textTheme.bodyText1),
               ),
             ),
